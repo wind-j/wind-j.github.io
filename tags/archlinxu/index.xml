@@ -1,0 +1,23 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Archlinxu - 标签 - 飞涧</title>
+    <link>https://wind-j.github.io/tags/archlinxu/</link>
+    <description>Archlinxu - 标签 | 飞涧</description>
+    <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dej1314@hotmail.com (J)</managingEditor>
+      <webMaster>dej1314@hotmail.com (J)</webMaster><lastBuildDate>Wed, 15 May 2024 14:54:24 &#43;0800</lastBuildDate><atom:link href="https://wind-j.github.io/tags/archlinxu/" rel="self" type="application/rss+xml" /><item>
+  <title>Arch Linux 安装记录</title>
+  <link>https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/</link>
+  <pubDate>Wed, 15 May 2024 14:54:24 &#43;0800</pubDate>
+  <author>J</author>
+  <guid>https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/</guid>
+  <description><![CDATA[前言正如你已经知道或者即将知道，Arch Linux 是一个非常神奇的 Linux 发行版，这是一个非常值得学习使用的系统。
+archinstall 是一个使用 Python 写的 Arch Linux 安装向导程序，可以很方便地使用 archinstall 安装 Arch Linux。从 Arch Linux 2022.05.01版本开始，默认集成了 archinstall 工具。
+准备在下载页面下载最新的 iso 镜像文件，国内用户推荐使用清华大学的镜像：
+https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
+下载后准备一个 U 盘，使用写入工具制作安装盘，比如 Rufus （仅支持 Windows 运行），其他方法可参考这里。
+注意，进行实机安装需要确认主板 BIOS 的相关设置，比如快速启动、安全启动等，否则可能会导致无法安装或安装完后无法进入系统。
+启动参考官网 官方Wiki archlinux 简明指南 常用基本配置1. 禁用 reflector 服务Arch Linux 中 reflector 服务会自己更新 mirrorlist（软件包管理器 pacman 的软件源）。比较建议手动设置镜像源列表，通过以下命令将该服务禁用：
+1 sudo systemctl stop reflector.service 2. 配置国内软件仓库镜像源使用 vim 编辑器修改 /etc/pacman.d/mirrorlist 文件。将 pacman 软件仓库源更换为国内软件仓库镜像源：]]></description>
+</item>
+</channel>
+</rss>

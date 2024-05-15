@@ -4,20 +4,41 @@
     <link>https://wind-j.github.io/</link>
     <description>飞涧</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dej1314@hotmail.com (J)</managingEditor>
-      <webMaster>dej1314@hotmail.com (J)</webMaster><lastBuildDate>Tue, 14 May 2024 11:10:25 &#43;0800</lastBuildDate>
+      <webMaster>dej1314@hotmail.com (J)</webMaster><lastBuildDate>Wed, 15 May 2024 14:54:24 &#43;0800</lastBuildDate>
       <atom:link href="https://wind-j.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-  <title>My First Post</title>
-  <link>https://wind-j.github.io/posts/my-first-post/</link>
+  <title>Arch Linux 安装记录</title>
+  <link>https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/</link>
+  <pubDate>Wed, 15 May 2024 14:54:24 &#43;0800</pubDate>
+  <author>J</author>
+  <guid>https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/</guid>
+  <description><![CDATA[前言正如你已经知道或者即将知道，Arch Linux 是一个非常神奇的 Linux 发行版，这是一个非常值得学习使用的系统。
+archinstall 是一个使用 Python 写的 Arch Linux 安装向导程序，可以很方便地使用 archinstall 安装 Arch Linux。从 Arch Linux 2022.05.01版本开始，默认集成了 archinstall 工具。
+准备在下载页面下载最新的 iso 镜像文件，国内用户推荐使用清华大学的镜像：
+https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
+下载后准备一个 U 盘，使用写入工具制作安装盘，比如 Rufus （仅支持 Windows 运行），其他方法可参考这里。
+注意，进行实机安装需要确认主板 BIOS 的相关设置，比如快速启动、安全启动等，否则可能会导致无法安装或安装完后无法进入系统。
+启动参考官网 官方Wiki archlinux 简明指南 常用基本配置1. 禁用 reflector 服务Arch Linux 中 reflector 服务会自己更新 mirrorlist（软件包管理器 pacman 的软件源）。比较建议手动设置镜像源列表，通过以下命令将该服务禁用：
+1 sudo systemctl stop reflector.service 2. 配置国内软件仓库镜像源使用 vim 编辑器修改 /etc/pacman.d/mirrorlist 文件。将 pacman 软件仓库源更换为国内软件仓库镜像源：]]></description>
+</item>
+<item>
+  <title>FixIt 主题</title>
+  <link>https://wind-j.github.io/posts/fixit/</link>
   <pubDate>Tue, 14 May 2024 11:10:25 &#43;0800</pubDate>
   <author>J</author>
-  <guid>https://wind-j.github.io/posts/my-first-post/</guid>
-  <description><![CDATA[Hello, Hugo &amp; Github Pages!]]></description>
+  <guid>https://wind-j.github.io/posts/fixit/</guid>
+  <description><![CDATA[Hello, Hugo &amp; Github Pages!
+FixIt 主题 | Hugo👉 English README | 简体中文说明
+FixIt 是一个简洁、优雅且高效的 Hugo 博客主题。
+它的原型基于 LoveIt 主题，KeepIt 主题 和 LeaveIt 主题。1
+主题文档安装篇 入门篇 内容管理 进阶篇 或者在本地运行 文档站点，更多细节详见 hugo-fixit/docs。
+模板仓库hugo-fixit/hugo-fixit-start hugo-fixit/hugo-fixit-start1 hugo-fixit/docs Lruihao/hugo-blog 谁在用 FixIt为了直观地浏览主题特性，这里有一些基于 FixIt 主题渲染的 预览网站。
+特性性能和 SEO性能优化：在 Google PageSpeed Insights 中，99/100 的移动设备得分和 100/100 的桌面设备得分 使用基于 JSON-LD 格式 的 SEO SCHEMA 文件进行 SEO 优化 支持 Google Analytics 支持 Fathom Analytics 支持搜索引擎的网站验证 (Google, Bing, Yandex, Pinterest, Baidu, 360 and Sogou) 支持所有第三方库的 CDN 外观和布局响应式布局 浅色/深色 主题模式 全局一致的设计语言 支持分页 易用和自动展开的文章目录 支持多语言和国际化 美观的 CSS 动画 社交和评论系统支持 Gravatar 头像 支持本地头像 支持多达 87 种社交链接 支持多达 28 种网站分享 支持 Disqus 评论系统 支持 Gitalk 评论系统 支持 Valine 评论系统 支持 Waline 评论系统 支持 Facebook 评论系统 支持 Telegram comments 评论系统 支持 Commento 评论系统 支持 Utterances 评论系统 支持 Artalk 评论系统 支持 Twikoo 评论系统 支持 giscus 评论系统 扩展功能支持渐进式网页应用 支持二级菜单 支持内容加密（页面、局部） 支持友情链接的页面模板 支持基于 algolia 或 Fuse.]]></description>
 </item>
 <item>
   <title>和时间赛跑</title>
   <link>https://wind-j.github.io/posts/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</link>
-  <pubDate>Mon, 01 Jan 2024 00:00:00 &#43;0800</pubDate>
+  <pubDate>Fri, 23 Jul 1993 00:00:00 &#43;0800</pubDate>
   <author>J</author>
   <guid>https://wind-j.github.io/posts/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</guid>
   <description><![CDATA[原文／林清玄

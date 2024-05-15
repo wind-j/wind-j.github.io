@@ -1,10 +1,10 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>所有文章 - 飞涧</title>
-    <link>https://wind-j.github.io/posts/</link>
-    <description>所有文章 | 飞涧</description>
+    <title>教程 - 标签 - 飞涧</title>
+    <link>https://wind-j.github.io/tags/%E6%95%99%E7%A8%8B/</link>
+    <description>教程 - 标签 | 飞涧</description>
     <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><managingEditor>dej1314@hotmail.com (J)</managingEditor>
-      <webMaster>dej1314@hotmail.com (J)</webMaster><lastBuildDate>Wed, 15 May 2024 14:54:24 &#43;0800</lastBuildDate><atom:link href="https://wind-j.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+      <webMaster>dej1314@hotmail.com (J)</webMaster><lastBuildDate>Wed, 15 May 2024 14:54:24 &#43;0800</lastBuildDate><atom:link href="https://wind-j.github.io/tags/%E6%95%99%E7%A8%8B/" rel="self" type="application/rss+xml" /><item>
   <title>Arch Linux 安装记录</title>
   <link>https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/</link>
   <pubDate>Wed, 15 May 2024 14:54:24 &#43;0800</pubDate>
@@ -32,24 +32,6 @@ FixIt 是一个简洁、优雅且高效的 Hugo 博客主题。
 主题文档安装篇 入门篇 内容管理 进阶篇 或者在本地运行 文档站点，更多细节详见 hugo-fixit/docs。
 模板仓库hugo-fixit/hugo-fixit-start hugo-fixit/hugo-fixit-start1 hugo-fixit/docs Lruihao/hugo-blog 谁在用 FixIt为了直观地浏览主题特性，这里有一些基于 FixIt 主题渲染的 预览网站。
 特性性能和 SEO性能优化：在 Google PageSpeed Insights 中，99/100 的移动设备得分和 100/100 的桌面设备得分 使用基于 JSON-LD 格式 的 SEO SCHEMA 文件进行 SEO 优化 支持 Google Analytics 支持 Fathom Analytics 支持搜索引擎的网站验证 (Google, Bing, Yandex, Pinterest, Baidu, 360 and Sogou) 支持所有第三方库的 CDN 外观和布局响应式布局 浅色/深色 主题模式 全局一致的设计语言 支持分页 易用和自动展开的文章目录 支持多语言和国际化 美观的 CSS 动画 社交和评论系统支持 Gravatar 头像 支持本地头像 支持多达 87 种社交链接 支持多达 28 种网站分享 支持 Disqus 评论系统 支持 Gitalk 评论系统 支持 Valine 评论系统 支持 Waline 评论系统 支持 Facebook 评论系统 支持 Telegram comments 评论系统 支持 Commento 评论系统 支持 Utterances 评论系统 支持 Artalk 评论系统 支持 Twikoo 评论系统 支持 giscus 评论系统 扩展功能支持渐进式网页应用 支持二级菜单 支持内容加密（页面、局部） 支持友情链接的页面模板 支持基于 algolia 或 Fuse.]]></description>
-</item>
-<item>
-  <title>和时间赛跑</title>
-  <link>https://wind-j.github.io/posts/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</link>
-  <pubDate>Fri, 23 Jul 1993 00:00:00 &#43;0800</pubDate>
-  <author>J</author>
-  <guid>https://wind-j.github.io/posts/%E5%92%8C%E6%97%B6%E9%97%B4%E8%B5%9B%E8%B7%91/</guid>
-  <description><![CDATA[原文／林清玄
-读小学的时候，我的外祖母去世了。外祖母生前最疼爱我。我无法排除自己的忧伤，每天在学校的操场上一圈一圈地跑着，跑得累倒在地上，扑在草坪上痛哭。
-那哀痛的日子持续了很久，爸爸妈妈也不知道如何安慰我。他们知道与其欺骗我说外祖母睡着了，还不如对我说实话：外祖母永远不会回来了。
-“什么是永远不会回来了呢？”我问。
-“所有时间里的事物，都永远不会回来了。你的昨天过去了，它就永远变成昨天，你再也不能回到昨天了。爸爸以前和你一样小，现在再也不能回到你这么小的童年了。有一天你会长大，你也会像外祖母一样老，有一天你度过了你的所有时间，也会像外祖母永远不能回来了。”爸爸说。
-爸爸等于给我一个谜语，这谜语比课本上的“日历挂在墙壁，一天撕去一页，使我心里着急”和“一寸光阴一寸金，寸金难买寸光阴”还让我感到可怕；也比作文本上的“光阴似箭，日月如梭”更让我觉得有一种说不出的滋味。
-以后，我每天放学回家，在庭院时看着太阳一寸一寸地沉进了山头，就知道一天真的过完了。虽然明天还会有新的太阳，但永远不会有今天的太阳了。
-我看到鸟儿飞到天空，它们飞得多快呀。明天它们再飞过同样的路线，也永远不是今天了。或许明天再飞过这条路线，不是老鸟，而是小鸟了。
-时间过的飞快，使我的小心眼里不只是着急，还有悲伤。有一天我放学回家，看到太阳快落山了，就下决心说：“我要比太阳更快回家。”我狂奔回去，站在庭院里喘气的时候，看到太阳还露着半边脸，我高兴地跳起来。那一天我跑赢了太阳。以后我常做这样的游戏，有时和太阳赛跑，有时和西北风比赛，有时一个暑假的作业，我十天就做完了。那时我三年级，常把哥哥五年级的作业拿来做。每一次比赛胜过时间，我就快乐得不知道怎么形容。
-后来的二十年里，我因此受益无穷。虽然我知道人永远跑不过时间，但是可以比原来跑快一步，如果加把劲，有时可以快好几步。那几步虽然很小很小，用途却很大很大。
-如果将来我有什么要教给我的孩子，我会告诉他：假若你一直和时间赛跑，你就可以成功。]]></description>
 </item>
 </channel>
 </rss>
