@@ -173,7 +173,7 @@ export all_proxy=http://127.0.0.1:8889
 # 安装
 sudo pacman -S proxychains-ng
 # 使用
-procychains4 git clone &lt;url&gt;
+proxychains4 git clone &lt;url&gt;
 ```
 
 在使用 proxychains-ng 时会在第一句输出配置文件位置，可编辑代理配置加入 `[ProxyList]` 中。
@@ -181,7 +181,6 @@ procychains4 git clone &lt;url&gt;
 ```text
 [ProxyList] 
 socks5  127.0.0.1 xxxx
-http    127.0.0.1 xxxx
 http    127.0.0.1 xxxx
 ```
 

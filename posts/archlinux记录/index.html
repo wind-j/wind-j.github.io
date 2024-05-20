@@ -26,7 +26,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
 1 sudo systemctl stop reflector.service 2. 配置国内软件仓库镜像源使用 vim 编辑器修改 /etc/pacman.d/mirrorlist 文件。将 pacman 软件仓库源更换为国内软件仓库镜像源：">
   <meta itemprop="datePublished" content="2024-05-15T14:54:24+08:00">
   <meta itemprop="dateModified" content="2024-05-15T00:00:00+00:00">
-  <meta itemprop="wordCount" content="541">
+  <meta itemprop="wordCount" content="537">
   <meta itemprop="keywords" content="教程,Archlinxu"><meta property="og:url" content="https://wind-j.github.io/posts/archlinux%E8%AE%B0%E5%BD%95/">
   <meta property="og:site_name" content="飞涧">
   <meta property="og:title" content="Arch Linux 安装记录">
@@ -66,7 +66,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": "https:\/\/wind-j.github.io\/posts\/archlinux%E8%AE%B0%E5%BD%95\/"
-    },"genre": "posts","keywords": "教程, archlinxu","wordcount":  541 ,
+    },"genre": "posts","keywords": "教程, archlinxu","wordcount":  537 ,
     "url": "https:\/\/wind-j.github.io\/posts\/archlinux%E8%AE%B0%E5%BD%95\/","datePublished": "2024-05-15T14:54:24+08:00","dateModified": "2024-05-15T00:00:00+00:00","publisher": {
       "@type": "Organization",
       "name": ""},"author": {
@@ -190,7 +190,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
     <div class="header"><h1 class="single-title animate__animated animate__flipInX"><span>Arch Linux 安装记录</span>
       </h1></div><div class="post-meta">
       <div class="post-meta-line"><span class="post-author"><a href="https://wind-j.github.io" title="作者"target="_blank" rel="external nofollow noopener noreferrer author" class="author"><i class="fa-solid fa-user-circle" aria-hidden="true"></i>
-    J</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E6%97%A0%E6%89%80%E4%BA%8B%E4%BA%8B/" class="post-category" title="分类 - 无所事事"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 无所事事</a></span></div><div class="post-meta-line"><span title="发布于 2024-05-15 14:54:24"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="更新于 2024-05-15 00:00:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="541 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 600 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;</div>
+    J</a></span><span class="post-included-in">&nbsp;收录于 <a href="/categories/%E6%97%A0%E6%89%80%E4%BA%8B%E4%BA%8B/" class="post-category" title="分类 - 无所事事"><i class="fa-regular fa-folder fa-fw" aria-hidden="true"></i> 无所事事</a></span></div><div class="post-meta-line"><span title="发布于 2024-05-15 14:54:24"><i class="fa-solid fa-calendar-days fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="更新于 2024-05-15 00:00:00"><i class="fa-regular fa-calendar-check fa-fw me-1" aria-hidden="true"></i><time datetime="2024-05-15">2024-05-15</time></span>&nbsp;<span title="537 字"><i class="fa-solid fa-pencil-alt fa-fw me-1" aria-hidden="true"></i>约 600 字</span>&nbsp;<span><i class="fa-regular fa-clock fa-fw me-1" aria-hidden="true"></i>预计阅读 3 分钟</span>&nbsp;</div>
     </div><div class="details toc" id="toc-static" data-kept="false">
         <div class="details-summary toc-title">
           <span>目录</span>
@@ -470,7 +470,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># 安装</span>
 </span></span><span class="line"><span class="cl">sudo pacman -S proxychains-ng
 </span></span><span class="line"><span class="cl"><span class="c1"># 使用</span>
-</span></span><span class="line"><span class="cl">procychains4 git clone &lt;url&gt;</span></span></code></pre></td></tr></table>
+</span></span><span class="line"><span class="cl">proxychains4 git clone &lt;url&gt;</span></span></code></pre></td></tr></table>
 </div>
 </div><p>在使用 proxychains-ng 时会在第一句输出配置文件位置，可编辑代理配置加入 <code>[ProxyList]</code> 中。</p>
 <div class="highlight"><div class="chroma">
@@ -478,12 +478,10 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span><span class="lnt">2
 </span><span class="lnt">3
-</span><span class="lnt">4
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">[ProxyList] 
 </span></span><span class="line"><span class="cl">socks5  127.0.0.1 xxxx
-</span></span><span class="line"><span class="cl">http    127.0.0.1 xxxx
 </span></span><span class="line"><span class="cl">http    127.0.0.1 xxxx</span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="3-zsh" class="heading-element"><span>3. zsh</span>
