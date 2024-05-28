@@ -38,15 +38,17 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
 注意，进行实机安装需要确认主板 BIOS 的相关设置，比如快速启动、安全启动等，否则可能会导致无法安装或安装完后无法进入系统。
 启动参考官网 官方Wiki archlinux 简明指南 常用基本配置1. 禁用 reflector 服务Arch Linux 中 reflector 服务会自己更新 mirrorlist（软件包管理器 pacman 的软件源）。比较建议手动设置镜像源列表，通过以下命令将该服务禁用：
 1 sudo systemctl stop reflector.service 2. 配置国内软件仓库镜像源使用 vim 编辑器修改 /etc/pacman.d/mirrorlist 文件。将 pacman 软件仓库源更换为国内软件仓库镜像源：">
-  <meta property="og:locale" content="zh-CN">
+  <meta property="og:locale" content="zh_CN">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
     <meta property="article:published_time" content="2024-05-15T14:54:24+08:00">
     <meta property="article:modified_time" content="2024-05-15T00:00:00+00:00">
     <meta property="article:tag" content="教程">
     <meta property="article:tag" content="Archlinxu">
-<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Arch Linux 安装记录">
-<meta name="twitter:description" content="前言正如你已经知道或者即将知道，Arch Linux 是一个非常神奇的 Linux 发行版，这是一个非常值得学习使用的系统。
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arch Linux 安装记录">
+  <meta name="twitter:description" content="前言正如你已经知道或者即将知道，Arch Linux 是一个非常神奇的 Linux 发行版，这是一个非常值得学习使用的系统。
 archinstall 是一个使用 Python 写的 Arch Linux 安装向导程序，可以很方便地使用 archinstall 安装 Arch Linux。从 Arch Linux 2022.05.01版本开始，默认集成了 archinstall 工具。
 准备在下载页面下载最新的 iso 镜像文件，国内用户推荐使用清华大学的镜像：
 https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
@@ -207,7 +209,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
         <li><a href="#5-注意事项">5. 注意事项</a></li>
       </ul>
     </li>
-    <li><a href="#基本配置-1">基本配置</a>
+    <li><a href="#常用配置">常用配置</a>
       <ul>
         <li><a href="#1-git">1. git</a></li>
         <li><a href="#2-proxy">2. proxy</a></li>
@@ -369,8 +371,8 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h3><p>AUR 仓库和 archlinuxcn 仓库是用户主导的软件包，使用时需注意区分相同软件的不同构建，以及更新情况等。</p>
-<h2 id="基本配置-1" class="heading-element"><span>基本配置</span>
-  <a href="#%e5%9f%ba%e6%9c%ac%e9%85%8d%e7%bd%ae-1" class="heading-mark">
+<h2 id="常用配置" class="heading-element"><span>常用配置</span>
+  <a href="#%e5%b8%b8%e7%94%a8%e9%85%8d%e7%bd%ae" class="heading-mark">
     <svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg>
   </a>
 </h2><h3 id="1-git" class="heading-element"><span>1. git</span>
@@ -664,7 +666,7 @@ https://mirrors.tuna.tsinghua.edu.cn/archlinux/iso/latest/archlinux-x86_64.iso
 
   <aside class="toc" id="toc-auto" aria-label="目录"><h2 class="toc-title">目录&nbsp;<i class="toc-icon fa-solid fa-angle-down fa-fw" aria-hidden="true"></i></h2>
       <div class="toc-content" id="toc-content-auto"></div></aside></main><footer class="footer">
-    <div class="footer-container"><div class="footer-line custom">Life should be interesting.</div><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.125.7">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6">FixIt</a>
+    <div class="footer-container"><div class="footer-line custom">Life should be interesting.</div><div class="footer-line powered">由 <a href="https://gohugo.io/" target="_blank" rel="external nofollow noopener noreferrer" title="Hugo 0.126.1">Hugo</a> 强力驱动 | 主题 - <a href="https://github.com/hugo-fixit/FixIt" target="_blank" rel="external" title="FixIt v0.3.6">FixIt</a>
         </div><div class="footer-line copyright" itemscope itemtype="http://schema.org/CreativeWork"><i class="fa-regular fa-copyright fa-fw" aria-hidden="true"></i>
             <span itemprop="copyrightYear">2024</span><span class="author" itemprop="copyrightHolder">
               <a href="https://wind-j.github.io"target="_blank" rel="external nofollow noopener noreferrer">J</a></span></div></div>

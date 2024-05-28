@@ -106,7 +106,7 @@ sudo pacman-key --lsign-key &#34;farseerfc@archlinux.org&#34;
 
 AUR 仓库和 archlinuxcn 仓库是用户主导的软件包，使用时需注意区分相同软件的不同构建，以及更新情况等。
 
-## 基本配置
+## 常用配置
 
 ### 1. git
 
